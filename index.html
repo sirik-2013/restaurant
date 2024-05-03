@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amrutha Vilas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+    /* Custom styles */
+    .navbar-brand img {
+      max-height: 40px;
+    }
+    .menu-item {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .menu-item img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .gallery-img {
+      margin-bottom: 20px;
+    }
+    .feature-item {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .feature-item i {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .owl-prev, .owl-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      color: #333;
+    }
+    .owl-prev {
+      left: 10px;
+    }
+    .owl-next {
+      right: 10px;
+    }
+    .menu-items {
+      display: none;
+    }
+    .menu-items.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="/images/Logo.jpg" alt="Amrutha Vilas Logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#menu">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#gallery">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+    <a class="btn btn-primary ml-lg-3" href="#order-online">Order Online</a>
+  </div>
+</nav>
+
+<!-- Slider Section -->
+<section id="slider" class="py-5">
+  <div class="container">
+    <div class="owl-carousel">
+      <div class="item"><img src="/images/Slider1.jpg" alt="Slider Image 1"></div>
+      <div class="item"><img src="/images/Slider2.png" alt="Slider Image 2"></div>
+      <div class="item"><img src="/images/Slider3.png" alt="Slider Image 3"></div>
+    </div>
+    <div class="text-center mt-4">
+      <a class="btn btn-primary btn-lg btn-book mr-3" href="#book-table">Book Table</a>
+      <a class="btn btn-secondary btn-lg btn-order" href="#order-online">Order Online</a>
+    </div>
+  </div>
+</section>
+
+<!-- Menu Section -->
+<section id="menu" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Menu</h2>
+    <div class="row mb-4">
+      <div class="col">
+        <button class="btn btn-primary menu-btn" data-menu="breakfast">Breakfast</button>
+        <button class="btn btn-primary menu-btn" data-menu="lunch">Lunch</button>
+        <button class="btn btn-primary menu-btn" data-menu="dinner">Dinner</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="menu-items" id="breakfast-items">
+          <h4>Breakfast</h4>
+          <div class="menu-item">
+            <img src="/images/BreakFast_1.jpg" alt="Breakfast Item 1">
+            <h5>Item 1</h5>
+            <p>$10 - 7am to 10am</p>
+          </div>
+          <div class="menu-item">
+            <img src="/images/BreakFast_2.jpg" alt="Breakfast Item 2">
+            <h5>Item 2</h5>
+            <p>$12 - 7am to 10am</p>
+          </div>
+          <div class="menu-item">
+            <img src="/images/BreakFast_3.jpg" alt="Breakfast Item 3">
+            <h5>Item 3</h5>
+            <p>$8 - 7am to 10am</p>
+          </div>
+        </div>
+        <div class="menu-items" id="lunch-items">
+          <h4>Lunch</h4>
+          <div class="menu-item">
+            <img src="/images/Lunch1.jpg" alt="Lunch Item 1">
+            <h5>Item 1</h5>
+            <p>$15 - 12pm to 3pm</p>
+          </div>
+          <div class="menu-item">
+            <img src="/images/Lunch2.jpg" alt="Lunch Item 2">
+            <h5>Item 2</h5>
+            <p>$18 - 12pm to 3pm</p>
+          </div>
+          <div class="menu-item">
+            <img src="/images/Lunch3.jpg" alt="Lunch Item 3">
+            <h5>Item 3</h5>
+            <p>$14 - 12pm to 3pm</p>
+          </div>
+        </div>
+        <div class="menu-items" id="dinner-items">
+          <h4>Dinner</h4>
+          <div class="menu-item">
+            <img src="/images/Dinner1.jpg" alt="Dinner Item 1">
+            <h5>Item 1</h5>
+            <p>$20 - 6pm to 10pm</p>
+          </div>
+          <div class="menu-item">
+            <img src="/images/Dinner2.jpg" alt="Dinner Item 2">
+            <h5>Item 2</h5>
+            <p>$25 - 6pm to 10pm</p>
+          </div>
+          <div class="menu-item">
+            <img src="/images/Dinner3.jpg" alt="Dinner Item 3">
+            <h5>Item 3</h5>
+            <p>$22 - 6pm to 10pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Why Choose Us</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="feature-item">
+            <img src="/images/wifi.jpg" alt="Free Wi-Fi" class="mb-3">
+            <h4>Free Wi-Fi</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="feature-item">
+            <img src="/images/Delivery.jpg" alt="Fast Delivery" class="mb-3">
+            <h4>Fast Delivery</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="feature-item">
+            <img src="/images/Staff.jpg" alt="Friendly Staff" class="mb-3">
+            <h4>Friendly Staff</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="feature-item">
+            <img src="/images/rating.jpg" alt="Highly Rated" class="mb-3">
+            <h4>Highly Rated</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Reservation Section -->
+<section id="reservation" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Make a Reservation</h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputName">Name</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputDate">Date</label>
+          <input type="date" class="form-control" id="inputDate">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputTime">Time</label>
+          <input type="time" class="form-control" id="inputTime">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputGuests">Number of Guests</label>
+          <input type="number" class="form-control" id="inputGuests" placeholder="Enter number of guests">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPhone">Phone</label>
+          <input type="tel" class="form-control" id="inputPhone" placeholder="Enter your phone number">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Make Reservation</button>
+    </form>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Gallery</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="/images/G1.jpg" alt="Gallery Image 1" class="img-fluid gallery-img">
+      </div>
+      <div class="col-md-4">
+        <img src="/images/G2.jpg" alt="Gallery Image 2" class="img-fluid gallery-img">
+      </div>
+      <div class="col-md-4">
+        <img src="/images/G3.jpg" alt="Gallery Image 3" class="img-fluid gallery-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">About Amrutha Vilas</h2>
+    <p>Amrutha Vilas is a renowned restaurant that has been serving delectable cuisine for over a decade. Our passion for food and dedication to providing an exceptional dining experience have made us a favorite among food lovers in the city.</p>
+    <p>At Amrutha Vilas, we take pride in using only the freshest and highest quality ingredients to prepare our dishes. Our skilled chefs combine traditional cooking techniques with modern twists to create a menu that caters to diverse palates.</p>
+    <p>Whether you're looking for a quick bite, a leisurely lunch, or a special dinner with loved ones, Amrutha Vilas offers a warm and inviting ambiance that makes you feel right at home. Our friendly staff is always ready to assist you and ensure that your dining experience is nothing short of extraordinary.</p>
+    <p>Visit Amrutha Vilas and embark on a culinary journey that will tantalize your taste buds and leave you craving for more. We look forward to serving you!</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <p>Email us at info@amruthavilas.com</p>
+    <p>Call us at +123 456 7890</p>
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:1
+      },
+      1000:{
+        items:1
+      }
+    }
+  });
+  
+  const menuButtons = document.querySelectorAll('.menu-btn');
+
+  menuButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const menuType = button.getAttribute('data-menu');
+      const menuItems = document.getElementById(`${menuType}-items`);
+      
+      // Hide all menu items
+      document.querySelectorAll('.menu-items').forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      // Show the selected menu items
+      menuItems.classList.add('active');
+    });
+  });
+});
+</script>
+
+<!-- Careers Section -->
+<section id="careers" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Careers</h2>
+          <p>Join our team at Amrutha Vilas and be a part of our passion for delivering exceptional dining experiences. We are always looking for talented individuals who share our commitment to excellence.</p>
+          <p>Current Job Openings:</p>
+          <ul>
+            <li>Chef</li>
+            <li>Sous Chef</li>
+            <li>Waiter/Waitress</li>
+            <li>Bartender</li>
+          </ul>
+          <a href="#apply" class="btn btn-primary">Apply Now</a>
+        </div>
+        <div class="col-md-6">
+          <img src="/images/C1.jpg" alt="Careers" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Rewards Program Section -->
+  <section id="rewards" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Rewards Program</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="/images/rewards.jpg" alt="Rewards Program" class="img-fluid mb-4">
+        </div>
+        <div class="col-md-6">
+          <p>Join our Rewards Program and earn points on every purchase. Redeem your points for exclusive discounts and special offers.</p>
+          <ul>
+            <li>Earn 1 point for every $1 spent</li>
+            <li>Redeem points for discounts on your next visit</li>
+            <li>Get special offers and promotions</li>
+          </ul>
+          <a href="#sign-up" class="btn btn-primary">Sign Up Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Visit Us Section -->
+  <section id="visit-us" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Visit Us</h2>
+          <p>Come and experience the flavors of Amrutha Vilas in person. We look forward to serving you!</p>
+          <ul>
+            <li>Address: 123 Main Street, Cityville, Country 12345</li>
+            <li>Phone: +123 456 7890</li>
+            <li>Email: info@amruthavilas.com</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="/images/R1.jpg" alt="Restaurant" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

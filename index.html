@@ -54,11 +54,36 @@
       display: block;
     }
   </style>
+
+<style>
+  .navbar {
+    background-color: #333;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff7f50;
+  }
+  
+  .btn-primary {
+    background-color: #ff7f50;
+    border-color: #ff7f50;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff6347;
+    border-color: #ff6347;
+  }
+</style>
+
 </head>
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#"><img src="/restaurant/images/Logo.jpg" alt="Amrutha Vilas Logo"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -103,7 +128,7 @@
     <h2 class="text-center mb-4">Menu</h2>
     <div class="row mb-4">
       <div class="col">
-        <button class="btn btn-primary menu-btn" data-menu="breakfast">Breakfast</button>
+        <button class=<button type="button" class="btn btn-success">data-menu="breakfast">Breakfast</button>
         <button class="btn btn-primary menu-btn" data-menu="lunch">Lunch</button>
         <button class="btn btn-primary menu-btn" data-menu="dinner">Dinner</button>
       </div>
@@ -389,5 +414,6 @@ $(document).ready(function(){
       </div>
     </div>
   </section>
+  
 </body>
 </html>
